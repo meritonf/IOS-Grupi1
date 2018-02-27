@@ -11,9 +11,9 @@ import UIKit
 class SearchViewController: UIViewController,UITextFieldDelegate {
     
     var labelsPassed :String = ""
+    
     @IBOutlet weak var navBarTxtfield: UITextField!
     @IBOutlet weak var searchVCLBL: UILabel!
-    
     
     @IBAction func dergo123(_ sender: Any) {
         print("123123")
@@ -31,24 +31,23 @@ class SearchViewController: UIViewController,UITextFieldDelegate {
 //        let fastForwardBtn = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.fastForward, target: self, action: nil)
 //
 //        navigationItem.rightBarButtonItem = fastForwardBtn
-        
-    }
+      
     
-    @IBAction func blueRectangle(_ sender: UITapGestureRecognizer) {
-        
     }
+  
+    
     override func viewWillAppear(_ animated: Bool) {
         let titulli:String = "Cacttus Education"
         var arr = Array(0...1000)
        
-        if (titulli.contains("taq")){
+        if (titulli.contains("gent")){
             for num in arr{
                 print(arr[num], terminator:", ")
             }
         }
         else{
             for char in titulli{
-                print("\(char)",terminator:" ")
+                print("\(char)",terminator:" " )
             }
             print("")
         }
