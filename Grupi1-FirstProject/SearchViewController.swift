@@ -40,7 +40,7 @@ class SearchViewController: UIViewController,UITextFieldDelegate {
         let titulli:String = "Cacttus Education"
         var arr = Array(0...1000)
        
-        if (titulli.contains("gent")){
+        if (titulli.contains("cat")){
             for num in arr{
                 print(arr[num], terminator:", ")
             }
@@ -58,6 +58,7 @@ class SearchViewController: UIViewController,UITextFieldDelegate {
         self.searchVCLBL.text = (navBarTxtfield.text! as NSString).replacingCharacters(in: range, with: string)
         return true
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

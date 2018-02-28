@@ -11,25 +11,25 @@ import UIKit
 class HomeViewController: UIViewController {
    
     @IBOutlet weak var lblchange: UILabel!
-    @IBOutlet weak var BlueRect: UIView!
+    @IBOutlet weak var BlueSq: UIView!
     
-    @IBOutlet var BlueRectTapGesture: UITapGestureRecognizer!
+    @IBOutlet var BlueSqTapGesture: UITapGestureRecognizer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        BlueRectTapGesture = UITapGestureRecognizer(target: self, action: #selector(HomeViewController.myviewTapped(_:)))
-        BlueRectTapGesture.numberOfTapsRequired = 4
+        BlueSqTapGesture = UITapGestureRecognizer(target: self, action: #selector(HomeViewController.uiViewTap(_:)))
+        BlueSqTapGesture.numberOfTapsRequired = 4
         
-        BlueRect.addGestureRecognizer(BlueRectTapGesture)
-        BlueRect.isUserInteractionEnabled = true
+        BlueSq.addGestureRecognizer(BlueSqTapGesture)
+        BlueSq.isUserInteractionEnabled = true
     }
-    @objc func myviewTapped(_ sender: UITapGestureRecognizer) {
-        if self.BlueRect.backgroundColor == UIColor.yellow {
-            self.BlueRect.backgroundColor = UIColor.green
+    @objc func uiViewTap(_ sender: UITapGestureRecognizer) {
+        if self.BlueSq.backgroundColor == UIColor.yellow {
+            self.BlueSq.backgroundColor = UIColor.green
             lblchange.text="Green"
         }else{
-            self.BlueRect.backgroundColor = UIColor.yellow
+            self.BlueSq.backgroundColor = UIColor.yellow
             lblchange.text="Yellow"
         }
     }

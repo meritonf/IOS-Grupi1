@@ -199,8 +199,8 @@
                                 <color key="backgroundColor" red="0.026395004619999999" green="0.03736052275" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="Ufw-d4-uN0"/>
-                                    <constraint firstAttribute="width" constant="60" id="xH0-eX-fdE"/>
+                                    <constraint firstAttribute="width" constant="60" id="7gh-mZ-lXi"/>
+                                    <constraint firstAttribute="height" constant="60" id="udM-Gr-HGN"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="uI0-Hh-Q6U" appends="YES" id="3t5-wR-mGh"/>
@@ -209,20 +209,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="wAq-m9-i3h" firstAttribute="leading" secondItem="ler-re-AhE" secondAttribute="leading" constant="157" id="3Bl-mU-GgZ"/>
+                            <constraint firstItem="wAq-m9-i3h" firstAttribute="top" secondItem="bdu-cg-b6N" secondAttribute="bottom" constant="61" id="2GE-gV-Xjw"/>
                             <constraint firstItem="ler-re-AhE" firstAttribute="bottom" secondItem="bdu-cg-b6N" secondAttribute="bottom" constant="419" id="AnN-3w-Pbq"/>
-                            <constraint firstItem="ler-re-AhE" firstAttribute="bottom" secondItem="wAq-m9-i3h" secondAttribute="bottom" constant="298" id="EIs-yk-atP"/>
                             <constraint firstItem="ler-re-AhE" firstAttribute="trailing" secondItem="bdu-cg-b6N" secondAttribute="trailing" constant="167" id="HhY-Vr-5Lg"/>
-                            <constraint firstItem="wAq-m9-i3h" firstAttribute="top" secondItem="bdu-cg-b6N" secondAttribute="bottom" constant="61" id="K29-bX-Hge"/>
                             <constraint firstItem="bdu-cg-b6N" firstAttribute="leading" secondItem="ler-re-AhE" secondAttribute="leading" constant="166" id="cmP-gc-anx"/>
-                            <constraint firstItem="ler-re-AhE" firstAttribute="trailing" secondItem="wAq-m9-i3h" secondAttribute="trailing" constant="158" id="jUg-7e-BS0"/>
+                            <constraint firstItem="wAq-m9-i3h" firstAttribute="centerX" secondItem="bdu-cg-b6N" secondAttribute="centerX" id="nC7-h0-6EM"/>
                             <constraint firstItem="bdu-cg-b6N" firstAttribute="top" secondItem="ler-re-AhE" secondAttribute="top" constant="163" id="xTa-5y-Tbt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ler-re-AhE"/>
                     </view>
                     <connections>
-                        <outlet property="BlueRect" destination="wAq-m9-i3h" id="Shd-NZ-gDs"/>
-                        <outlet property="BlueRectTapGesture" destination="uI0-Hh-Q6U" id="YbO-Vp-bnM"/>
+                        <outlet property="BlueSq" destination="wAq-m9-i3h" id="Shd-NZ-gDs"/>
+                        <outlet property="BlueSqTapGesture" destination="uI0-Hh-Q6U" id="YbO-Vp-bnM"/>
                         <outlet property="lblchange" destination="bdu-cg-b6N" id="eFa-dp-ARg"/>
                     </connections>
                 </viewController>
