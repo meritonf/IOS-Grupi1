@@ -27,17 +27,14 @@ class HomeViewController: UIViewController {
     @objc func uiViewTap(_ sender: UITapGestureRecognizer) {
         if self.BlueSq.backgroundColor == UIColor.yellow {
             self.BlueSq.backgroundColor = UIColor.green
-            lblchange.text="Green"
+            lblchange.text = "Green"
+        }else if self.BlueSq.backgroundColor == UIColor.green{
+            self.BlueSq.backgroundColor = UIColor.blue
+            lblchange.text = "Blue"
         }else{
             self.BlueSq.backgroundColor = UIColor.yellow
-            lblchange.text="Yellow"
+            lblchange.text = "Yellow"
         }
-    }
-
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     /*

@@ -21,20 +21,17 @@ class SearchViewController: UIViewController,UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-        navBarTxtfield.text = labelsPassed
-        navBarTxtfield.delegate=self
-        searchVCLBL.text = navBarTxtfield.text
+    
+        navBarTxtfield.text = labelsPassed      //assign value of variable "labelsPassed" to
+                                                                                // navBarTxtfield.text
+        navBarTxtfield.delegate=self           //send message to self
+        searchVCLBL.text = navBarTxtfield.text //assign text to search viewcontroller label
         
 //
 //        let fastForwardBtn = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.fastForward, target: self, action: nil)
-//
 //        navigationItem.rightBarButtonItem = fastForwardBtn
-      
-    
     }
-  
     
     override func viewWillAppear(_ animated: Bool) {
         let titulli:String = "Cacttus Education"
@@ -42,28 +39,23 @@ class SearchViewController: UIViewController,UITextFieldDelegate {
        
         if (titulli.contains("cat")){
             for num in arr{
-                print(arr[num], terminator:", ")
+                print(arr[num], terminator:", ") // after prints array elements will print the string
+                                                    //that is used as terminator (default is "\n")
             }
         }
         else{
             for char in titulli{
-                print("\(char)",terminator:" " )
+                print("\(char)", terminator:" " )
             }
             print("")
         }
     }
     
-
+    // function that asks the delegate if the specified text should be changed
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         self.searchVCLBL.text = (navBarTxtfield.text! as NSString).replacingCharacters(in: range, with: string)
         return true
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
    
     /*
     // MARK: - Navigation
