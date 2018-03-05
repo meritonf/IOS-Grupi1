@@ -18,6 +18,7 @@ class MainViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
 
     //This function will execute performSegue function which Initiates the segue with the specified identifier from the current view controller's storyboard file
     @IBAction func SearchControllerBtn(_ sender: UIButton) {
